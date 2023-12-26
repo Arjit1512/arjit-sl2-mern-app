@@ -1,0 +1,9 @@
+<<<<<<< HEAD
+# mern-sm3
+=======
+TO LOGIN:
+CLICK ON CREATE ACCOUNT ON THE TOP OF THE WEBPAGE.
+CLICK ON SUBMIT TO GO TO NEXT PAGE.
+
+THANK YOU  .
+>>>>>>> master

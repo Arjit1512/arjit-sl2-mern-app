@@ -1,0 +1,601 @@
+.navbar{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  height: max-content
+}
+.navbar-search input{
+  background-color: lightgray;
+  width: 230px;
+  height: 35px;
+  font: 0.8em sans-serif;
+  font-weight: 530;
+  border-radius: 20px;
+  margin-top: 7px;
+}
+.navbar-brand{
+  font-weight: 600;
+  font-size: 2rem;
+  color: black;
+  padding-top:10px;
+  padding-left: 20px;
+}
+.navbar-brand span{
+  color: green;
+}
+.navbar p{
+  padding-right: 20px;  
+}
+#hero1{
+  background-image: url("sources/comp.png");
+  align-items: center;
+  color: #fff;
+  background-size: cover;
+  background-position: top 25% right 0%;
+  height: 45vh;  
+}
+.about h1{
+  font-weight: 900;
+  font-size: 2.5rem;
+  text-align: center;
+  color: white;
+  position: absolute;
+  top: 35%;
+  left:5%;
+}
+
+.about h5{
+  font-weight: 700;
+  font-size: 1rem;
+  text-align: center;
+  color: white;
+  position: absolute;
+  top: 43%;
+  left:5%;
+}
+
+#posts{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 0px;
+}
+.posts-div{
+  width: 70%;
+  padding-left: 6%;
+  background-color: white;
+}
+#posts a{
+  text-decoration: none;
+}
+#posts ul{
+  display: flex;
+  flex-direction: row;
+  justify-content:space-between;
+  width: 30%;
+  text-decoration: none;
+}
+
+#navbar-posts li{
+  list-style: none;
+  padding:0 20px;
+  position: relative;
+  margin-left: 1%;
+}
+
+#navbar-posts li a{
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 600;
+  color: gray;
+  transition: 0.3s ease;
+}
+
+#navbar-posts li a:hover,
+#navbar-posts li a.active{
+  color:#000;
+}
+
+#navbar-posts li a:hover::after,
+#navbar-posts li a.active::after{
+  content:"";
+  width:60%;
+  height:2px;
+  background:#000;
+  position:absolute;
+  bottom:-4px;
+  left:20px;
+}
+#navbar-posts2 button{
+  position: absolute;
+  right: 12%;
+  padding: 10px;
+  bottom: 38%;
+  font-weight: 600;
+  border-radius: 10px;
+  cursor: pointer;
+}
+#navbar-posts2 button.b2{
+  right: 5%;
+  background-color: rgb(10, 10, 228);
+  font-weight: 600;
+  border-radius: 10px;
+  color: #fff;
+}
+.feed img{
+  width: 700px;
+  height: 25vh;
+  margin-left: 10%;
+  padding-top: 2%;
+}
+.feed{
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+}
+.feed p, .feed h4, .feed h3{
+  margin-left: 10%;
+  margin-top: -1%;
+}
+.feed h4{
+  margin-top: 1%;
+}
+.feed p{
+  letter-spacing: 1.8px;
+}
+.feed .dp{
+  width:3%;
+  height:3%;
+  border-radius: 50%;
+  margin-top: -2%;
+}
+.feed .username{
+  position: relative;
+  margin-top:-2.5%;
+  margin-left: 14%;
+}
+.feed .views{
+  margin-top: -3%;
+  margin-left: 45%;
+}
+.flex-btw{
+  display: flex;
+  flex-direction: row;
+}
+.icons.more, .icons{
+  background-color: #fff;
+  border: none;
+  margin-top: -3.5%;
+  z-index: -100;
+}
+svg {
+  width: 100px;
+  height: 30px;
+  margin-left: 200%;
+}
+.icons.share{
+  margin-left: -13.4%;
+  margin-top: -3.2%;
+  height: 25px;
+}
+.meetup{
+  width: 46.2%;
+  margin-left: 10%;
+  color: orange;
+  font-size: 0.9rem;
+  font-weight: 600;
+  background-color: transparent;
+  border: 0.8px solid gray;
+  height: 25px;
+  cursor: pointer;
+}
+.dp3,.username3,.test3{
+  margin-top: 1.2%;
+}
+.more3{
+  display: flex;
+  flex-direction: row;
+  margin-top: 1.7%;
+}
+.bt3{
+  position: relative;
+  right: 6%;
+}
+.p3{
+  margin-left: 4%;
+  margin-top: -2.3%;
+}
+.loc3{
+  margin-left: 3.5%;
+}
+.dp4{
+height:5%
+}
+.last2{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: absolute;
+  bottom: 17%;
+  left:65%;
+}
+.border3{
+  border-bottom: 1px solid black;
+  border-width: 2px ;  
+}
+.bt1{
+  position: relative;
+  top:15%;
+  left:37%;
+}    
+#overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+#popup {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: left;
+  z-index: 1000;
+  width:max-content;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #ffffff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input[type="text"], input[type="email"], input[type="password"] {
+  width: 160%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+}
+
+button[type="submit"] {
+  width: 100%;
+  padding: 10px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover {
+  background-color: #45a049;
+}
+.div2{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  position: relative;
+  left:35%;
+}
+.login-img {
+  width: 300px;
+  height: 300px;
+  position: relative;
+  left:0%;
+  margin-top: 15%;
+}
+.p555{
+  margin: 0;
+  position: absolute;
+  top:70%;
+  left: 55%;
+  font-size: smaller;
+}
+.navbar-search input{
+  background-color: lightgray;
+  width: 230px;
+  height: 25px;
+  font: 0.8em sans-serif;
+  font-weight: 530;
+  border-radius: 20px;
+  margin-top: 7px;
+}
+.feed1 .dp111{
+  width:15%;
+  height:45%;
+  border-radius: 100%;
+  z-index: 10000;
+  position: relative;
+  left: 38%;
+  bottom: 0%;
+}
+.ungah4{
+  position: relative;
+  top:20%;
+  right:5%;
+}
+.feed1{
+  position: relative;
+  top:10%;
+  margin-right: 5%;
+  margin-top: 1%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.brder{
+  border:1px solid black;
+  position: relative;
+  bottom: 20%;
+}
+#navbar-posts2 button.b11{
+  position: absolute;
+  right: 12%;
+  padding: 10px;
+  bottom: 82%;
+  font-weight: 600;
+  border-radius: 10px;
+}
+#navbar-posts2 button.b12{
+  position: absolute;
+  right:4%;
+  padding: 10px;
+  bottom: 82%;
+  font-weight: 600;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.loc33{
+  margin-left: 4%;
+}
+.lists{
+  position: relative;
+  top:80%;
+
+}
+
+.lists img{
+  width:15%;
+  height:45%;
+  border-radius: 100%;
+  z-index: 10000;
+  position: relative;
+  left: 5%;
+  bottom: 0%;
+}
+.lists h2{
+  margin-left: 15%;
+  font-weight: 500;
+}
+
+.flex-lists{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.follow{
+  border-radius: 15px;
+  width: fit-content;
+  height: 28px;
+  position: relative;
+  margin-top:3.5%;
+  cursor: pointer;
+  right:25%;
+  top:2%;
+  font-weight: 550;
+}
+.leisure{
+  margin-top: 4%;
+  margin-right: 35%;
+}
+.filter-btn,.join-grp{
+  visibility: hidden;
+}
+.hide,.pink-circle{
+  visibility: visible;
+}
+.static-btn{
+  visibility: hidden;
+}
+@media screen and (max-width: 1000px) {
+  
+  .navbar{
+    visibility: hidden;
+  }
+  
+  .lists{
+    visibility: hidden;
+  }
+
+  .p3{
+    visibility: hidden;
+  }
+  .loc3{
+    visibility: hidden;
+  }
+  #navbar-posts2 button{
+    visibility: hidden;
+  }
+  .feed img {
+    width: 57vh;
+  }  
+  svg {
+    margin-left: 120%;
+    bottom: 5%;
+  }
+  .hide{
+    visibility: hidden;
+  }
+  .posts-div{
+    padding-left: 0;
+    height: 60px;
+  }
+  body{
+    overflow-x: hidden;
+  }
+  .feed .dp {
+    width: 7%;
+    height: 7%;
+  }  
+  .feed .username {
+    margin-top: -6%;
+    margin-left: 20%;
+  }
+  .feed .views {
+  margin-top: -8.7%;
+  }
+  .icons.share{
+    margin-left: -13.4%;
+    margin-top: -9.2%;
+    height: 25px;
+  }
+  .meetup {
+    width: 85%;
+  } 
+  .more3 {
+    margin-top: 7%;
+    margin-right: -295%;
+  }
+  .filter-btn{
+   visibility: visible;
+   width: max-content;
+   height: 30px;
+   position: relative;
+   left: 200%;
+   border: 0.1px solid gray;
+   border-radius: 5px;
+  }
+  .join-grp{
+    visibility: visible;
+    position: relative;
+    left:80%;
+    height: 30px;
+    top: 5%;
+    background-color: transparent;
+    font-size: 0.8rem;
+    color:white;
+    border: 1px solid white;
+    border-radius: 10px;
+    font-weight: 600;
+  }
+  .join-grp2{
+    position: absolute;
+    visibility: visible;
+    right: 20%;
+    margin-right: 60%;
+    color: #000;
+    background-color: #fff;
+  }
+  .move{
+    position: relative;
+    right: 85%;
+    margin-top: -20%;
+  }
+  #navbar-posts li a {
+    font-size: 0;
+  }
+  .move h5{
+    text-align: center;
+    margin-top: 18%;
+  }
+  .static-btn{
+    visibility: visible;
+    position: fixed;
+    border-radius: 50%;
+    background-color: transparent;
+    border: none;
+    bottom:3%;
+    height: 50px;
+    width: 50px;
+    right:18%;
+    font-weight: 800;
+    cursor: pointer;
+  }
+  .pink-circle{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-color: #fb306d;
+    position: fixed;
+    bottom: 3%;
+    right:2.4%;
+    cursor: pointer;
+  }
+  #popup {
+    visibility: visible;
+    height: 500px;
+    width: 400px;
+    z-index: 1000000000000;
+    box-shadow: 5px 5px 5px 2px  rgba(0, 0, 0, 0.4);
+    border: 1px solid black;
+  }
+  .login-img {
+    width: 200px;
+    height: 200px;
+    margin-top: 35%;
+  }
+  .navbar p {
+    padding-right: 30px;
+  }
+  .close-btn{
+    margin-right:-20%;
+   }
+}  
+body{
+  overflow-x: hidden;
+}
+.close-btn{
+  position: relative;
+  right:28%;
+  cursor: pointer;
+}
+.message-form-container{
+  width: 60%;
+}
+label{
+  font-weight: 600;
+}
+form.msgform{
+  position: relative;
+  left:8%;
+  margin-top: 3%;
+  border:2px solid black;
+  padding: 35px;
+}
+.icon-div{
+  justify-content: space-between;
+  position: relative;
+  left: 25%;
+  margin-top: -2.2%;
+}
+.icon-di2{
+  position: relative;
+  padding-top:0%;
+  margin-top: 0.5%;
+  right: 32%;
+  z-index: 1000;
+}
