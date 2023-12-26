@@ -10,7 +10,7 @@ import User from "./models/User.js";
 /* CONFIGURATIONS */
 dotenv.config();
 const allowedOrigins = [
-  "https://arjit-mern-sl2.vercel.app",
+  "https://arjit-sl2-mern.vercel.app/",
   "http://localhost:3000",
  ];
 const app = express();
