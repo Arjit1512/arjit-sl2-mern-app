@@ -1,0 +1,112 @@
+.items-of-user {
+    display: flex;
+    flex-direction: row;
+}
+
+.user-img {
+    position: relative;
+    left: 22%;
+    top: 18px;
+    border-radius: 50%;
+    height: 80px;
+    width: 80px;
+    cursor: pointer;
+}
+
+.user-details {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    left: 25%;
+    height: 10px;
+    border: 0px solid black;
+    padding-bottom: 80px;
+    width: 280px;
+    bottom: 7px;
+}
+
+.span-class {
+    font-weight: 700;
+    color: black;
+    position: relative;
+    top: 5px;
+}
+
+.job {
+    font-weight: 500;
+    color: gray;
+}
+
+.gray-border {
+    height: 12px;
+    color: gray;
+    width: 450px;
+    z-index: 100;
+    border-bottom: 1px solid gray;
+    border-width: 2px;
+    position: relative;
+    right: 5%;
+}
+
+.gray-line {
+    border-left: 1px solid gray;
+    height: 90px;
+    position: relative;
+    top: 12px;
+    right: 5%;
+}
+
+.gray-line2 {
+    border-left: 1px solid gray;
+    height: 90px;
+    position: relative;
+    right: 34.7%;
+    top: 12px;
+}
+
+.Task h1 {
+    position: relative;
+    right: 17%;
+}
+
+.slight-change {
+    position: relative;
+    top: 7px;
+}
+
+.selected-user-details-container {
+    position: fixed;
+    left: 60%;
+    top: 10%;
+    z-index: 10000000;
+}
+
+.selected-user-details {
+    border: 2px solid #ccc;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    width:400px;
+    padding-bottom: 180px;
+    background-color: #fff;
+    height:max-content;
+}
+
+.selected-user-details h2{
+    text-align: center;
+}
+
+.selected-user-details img{
+    position: relative;
+    left:40%;
+}
+
+.selected-user-details p{
+    margin-top: 2px;
+}
+.seperate-div{
+    position: relative;
+    top:40px;
+    right:12%;
+}
+.selected-user-details .name-div{
+    text-align: center;
+}

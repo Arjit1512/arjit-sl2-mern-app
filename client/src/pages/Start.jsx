@@ -34,6 +34,10 @@ const Start = () => {
     const gotoHome = () => {
         navigate("/home");
     }
+    
+    const gotoTask = () => {
+        navigate("/task");
+    }
 
     const openEditPopup = () => {
         setSignUp(true); // Assuming you want to show the signup form when the Edit button is clicked
@@ -103,7 +107,7 @@ const Start = () => {
                 <div className='posts2-div'>
                     <ul id="navbar-posts2">
 
-                        <button className='b1'><nobr>Write a Post</nobr></button>
+                        <button onClick={gotoTask} className='b1'><nobr>Write a Post</nobr></button>
                         <button onClick={gotoHome} className='b2'><nobr>Join Group</nobr></button>
                     </ul>
                 </div>
